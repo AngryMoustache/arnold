@@ -2,11 +2,10 @@
 
 namespace AngryMoustache\Arnold;
 
-use AngryMoustache\Arnold\Http\Livewire\PageArchitectLivewireField;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
-class PageArchitectServiceProvider extends ServiceProvider
+class ArnoldServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -28,7 +27,7 @@ class PageArchitectServiceProvider extends ServiceProvider
 
     private function livewire()
     {
-        Livewire::component('arnold-livewire-field', PageArchitectLivewireField::class);
+        // Livewire::component('arnold-livewire-field', PageArchitectLivewireField::class);
     }
 
     private function publishing()
