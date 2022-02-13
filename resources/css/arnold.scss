@@ -4,7 +4,7 @@
     --toolbar-width: 450px;
 }
 
-.pa {
+.arnold {
     flex-wrap: wrap;
     position: fixed;
     display: flex;
@@ -65,7 +65,7 @@
                 }
             }
 
-            &-block {
+            &-row {
                 position: relative;
                 border: $border;
                 border-radius: .2rem;
@@ -113,8 +113,15 @@
                     }
                 }
 
-                &-preview {
-                    padding: 1rem;
+                &-columns {
+                    display: flex;
+
+                    &-column {
+                        width: 100%;
+                        padding: .5rem;
+                        margin: .5rem;
+                        border: $border;
+                    }
                 }
 
                 &-actions {
