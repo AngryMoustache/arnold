@@ -1,0 +1,27 @@
+{
+  "name": "angry-moustache/arnold",
+  "description": "Package for making complicated pages in Rambo",
+  "keywords": [],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "livewire/livewire": "^2.0"
+  },
+  "autoload": {
+    "files": [
+        "src/helpers.php"
+    ],
+    "psr-4": {
+      "AngryMoustache\\Arnold\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "AngryMoustache\\Arnold\\PageArchitectServiceProvider"
+        ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
